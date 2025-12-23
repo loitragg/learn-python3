@@ -9,10 +9,88 @@
 This repository contains a collection of materials for teaching/learning Python 3 (3.10+).
 
 #### Requirements
-* Have Python 3.10 or newer installed. You can check the version by typing `python3 --version` in your command line. You can download the latest Python version from [here](https://www.python.org/downloads/).
-* Have [Jupyter Notebook installed](http://jupyter.readthedocs.io/en/latest/install.html). `pip install jupyter` is sufficient in most cases.
+* Have Python 3.10 or newer installed (Python 3.11 or 3.12 is preferred). You can check the version by typing `python3 --version` in your command line.
+* Have [Jupyter Notebook installed](http://jupyter.readthedocs.io/en/latest/install.html).
 
 If you can not access Python and/or Jupyter Notebook on your machine, you can still follow the web based materials. However, you should be able to use Jupyter Notebook in order to complete the exercises.
+
+#### Setup Instructions
+
+##### For macOS Users
+
+1. **Install Python 3.11 or 3.12**
+
+   **Option A: Using Official Installer (Recommended for beginners)**
+   - Visit [python.org/downloads](https://www.python.org/downloads/)
+   - Download Python 3.11 or 3.12 installer for macOS
+   - Run the `.pkg` installer and follow the installation wizard
+   - Verify installation: `python3 --version`
+
+   **Option B: Using Homebrew (Recommended for developers)**
+   ```bash
+   # Install Homebrew if not already installed
+   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+   # Install Python 3.12 (or 3.11)
+   brew install python@3.12
+
+   # Verify installation
+   python3 --version
+   ```
+
+2. **Set up the project**
+   ```bash
+   # Clone this repository
+   git clone https://github.com/loitragg/learn-python3.git
+   cd learn-python3
+
+   # Create virtual environment, activate it, and install dependencies
+   python3 -m venv .venv && source .venv/bin/activate && pip install -r dev-requirements.txt
+   ```
+
+3. **Start learning**
+   ```bash
+   # Make sure your virtual environment is activated
+   source .venv/bin/activate
+
+   # Launch Jupyter Notebook
+   jupyter notebook
+   ```
+
+##### For Windows Users
+
+1. **Install Python 3.11 or 3.12**
+   - Visit [python.org/downloads](https://www.python.org/downloads/)
+   - Download Python 3.11 or 3.12 installer for Windows
+   - Run the installer and **IMPORTANT: Check "Add Python to PATH"** during installation
+   - Verify installation by opening Command Prompt or PowerShell and typing: `python --version`
+
+2. **Set up the project**
+
+   Open Command Prompt or PowerShell:
+   ```bash
+   # Clone this repository
+   git clone https://github.com/jerry-git/learn-python3.git
+   cd learn-python3
+
+   # Create virtual environment
+   python -m venv .venv
+
+   # Activate virtual environment
+   .venv\Scripts\activate
+
+   # Install dependencies
+   pip install -r dev-requirements.txt
+   ```
+
+3. **Start learning**
+   ```bash
+   # Make sure your virtual environment is activated
+   .venv\Scripts\activate
+
+   # Launch Jupyter Notebook
+   jupyter notebook
+   ```
 
 #### Usage (locally)
 
