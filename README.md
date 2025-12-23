@@ -1,3 +1,11 @@
+## Video Tutorial
+
+[![Python 3 Tutorial](https://img.youtube.com/vi/Q_9menbXse0/hqdefault.jpg)](https://youtu.be/Q_9menbXse0)
+
+Click the image above to watch the video tutorial.
+
+---
+
 <p align="center">
   <img src="logo.png" alt="logo"/>
 </p>
